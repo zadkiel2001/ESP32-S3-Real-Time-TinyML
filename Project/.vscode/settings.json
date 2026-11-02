@@ -1,0 +1,9 @@
+{
+    "idf.currentSetup": "C:\\Users\\nt5436wu\\esp\\v5.5.2\\esp-idf",
+    "cmake.sourceDirectory": "C:/Users/nt5436wu/Downloads/Master/Research/Project/tinyml_ts_espidf/main",
+    "C_Cpp.errorSquiggles": "disabled",
+    "idf.openOcdConfigs": [
+        "board/esp32s3-builtin.cfg"
+    ],
+    "idf.monitorPort": "COM4"
+}

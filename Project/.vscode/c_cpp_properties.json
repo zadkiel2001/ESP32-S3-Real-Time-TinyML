@@ -1,0 +1,45 @@
+{
+  "configurations": [
+    {
+      "name": "ESP-IDF",
+      "compilerPath": "C:\\Users\\nt5436wu\\.espressif\\tools\\xtensa-esp-elf\\esp-14.2.0_20251107\\xtensa-esp-elf\\bin\\xtensa-esp32-elf-gcc.exe",
+      "compileCommands": [
+        "${config:idf.buildPath}/compile_commands.json"
+      ],
+      "includePath": [
+        "${workspaceFolder}/build/config",
+        "${config:idf.espIdfPath}/components/log/include",
+        "${config:idf.espIdfPathWin}/components/log/include",
+        "${config:idf.espIdfPath}/components/**",
+        "${config:idf.espIdfPathWin}/components/**",
+        "${workspaceFolder}/**",
+        "${workspaceFolder}/managed_components/espressif__esp-tflite-micro",
+        "${workspaceFolder}/managed_components/espressif__esp-tflite-micro/third_party/gemmlowp",
+        "${workspaceFolder}/managed_components/espressif__esp-tflite-micro/third_party/flatbuffers/include",
+        "${workspaceFolder}/managed_components/espressif__esp-tflite-micro/third_party/ruy",
+        "${workspaceFolder}/managed_components/espressif__esp-tflite-micro/third_party/kissfft",
+        "${workspaceFolder}/managed_components/espressif__esp-nn/include",
+        "${workspaceFolder}/managed_components/espressif__esp-nn/src/common"
+      ],
+      "defines": [
+        "TF_LITE_STATIC_MEMORY",
+        "CONFIG_FREERTOS_HZ=100",
+        "CONFIG_LOG_MAXIMUM_LEVEL=3",
+        "ESP_PLATFORM",
+        "IDF_VER=\"v5.5.2\"",
+        "ESP_LOG_LEVEL_LOCAL(level, tag, format, ...) ESP_LOG_LEVEL(level, tag, format, ##__VA_ARGS__)"
+      ],
+      "browse": {
+        "path": [
+          "${config:idf.espIdfPath}/components",
+          "${config:idf.espIdfPathWin}/components",
+          "${workspaceFolder}",
+          "${workspaceFolder}/managed_components"
+        ],
+        "limitSymbolsToIncludedHeaders": true
+      },
+      "configurationProvider": "ESP-IDF"
+    }
+  ],
+  "version": 4
+}
